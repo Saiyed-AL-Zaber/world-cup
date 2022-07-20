@@ -1,0 +1,212 @@
+/* font-family */
+/* for body
+font-family: 'Merriweather', serif; */
+/* font-family: 'Work Sans', sans-serif; */
+/* reset-code */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* global-style */
+body {
+  font-family: "Merriweather", serif;
+}
+.container {
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: white;
+  color: rgb(255, 255, 255);
+  padding: 16px 25px;
+  border: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+/* banner-section-start-here */
+.banner {
+  background-color: #364f6b;
+  color: white;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.banner-text-sec {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  padding: 60px;
+}
+.banner-text-sec h1 {
+  font-size: 54px;
+  font-family: "Work Sans", sans-serif;
+}
+.banner:hover h1 {
+  text-shadow: 0 0 5px rgba(221, 221, 221, 0.507);
+  transition: text-shadow 0.1s;
+}
+.banner-text-sec p {
+  font-size: 16px;
+  line-height: 1.3;
+  word-spacing: 2px;
+  margin: 30px 0;
+  letter-spacing: 0.7px;
+}
+.banner-text-sec button {
+  background-color: #3fc1c9;
+  overflow: hidden;
+}
+/* animation-for-banner-btn */
+.banner-text-sec button:hover {
+  box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.7);
+  transition: box-shadow 0.2s;
+}
+.banner-text-sec button:hover i {
+  transform: translateX(5px);
+  transition: transform 0.5s ease-in;
+}
+.banner-img-sec {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+.banner-img-sec img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* banner-section-ends-here */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.blog-buttons {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+.article-four {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.article-five {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.article-six {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+.article-seven {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.article-eight {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+.article-nine {
+  grid-column: 4 / 4;
+  grid-row: 3 / 4;
+}
+.blog-buttons {
+  background-color: #364f6b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.blog-btn{
+
+  color: rgb(82, 82, 82);
+}
+.blog-btn.active{
+  background-color: rgb(255, 63, 63);
+  color: white;
+}
+.blog-thumbnail img {
+  width: 100%;
+  max-width: 100%;
+}
+article{
+  box-shadow: 0px 0px 5px lightgray;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.article-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: transparent;
+  color: rgb(54, 54, 54);
+  border: 1px solid rgb(54, 54, 54);
+}
+.blogs-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+  line-height: 27px;
+  padding: 10px 5px;
+}
+.blog-info {
+  display: flex;
+  column-gap: 50px;
+  margin: 10px;
+  color: #161616b2;
+}
+.blog-info > p > i {
+  margin-right: 5px;
+}
+/* footer-section-start-here */
+.footer-container {
+  max-width: 100%;
+  background-color: #364f6b;
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+.footer-header {
+  font-size: 40px;
+  font-weight: 600;
+}
+hr {
+  margin: 40px auto;
+  border: 1px solid rgba(209, 209, 209, 0.801);
+}
+.footer-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-items a {
+  text-decoration: none;
+  color: white;
+}
+.social-icon {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.social-icon a {
+  text-align: none;
+  color: white;
+  font-size: 28px;
+  margin: 0 20px;
+}
+.fa-brands:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-out;
+}
+/* footer-section-ends-here */

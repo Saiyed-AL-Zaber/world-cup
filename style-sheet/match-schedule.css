@@ -1,0 +1,39 @@
+/*---------------------------------
+ style-sheet-for-schdule-html-page 
+---------------------------------*/
+.blog{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0;
+}
+.blog-buttons{
+    row-gap: 20px;
+}
+.match{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding:40px 20px;
+}
+.teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teams img{
+    max-width:  40%;
+}.versus{
+    font-size: 18px;
+    font-weight: bold;
+}
+.match-info h3{
+    text-align: center;
+    font-size: 24px;
+    margin: 15px;
+}
+.match-info p{
+    text-align: center;
+    font-size: 18px;
+    color: #5C5C5C;
+}
