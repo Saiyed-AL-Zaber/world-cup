@@ -1,9 +1,9 @@
 /*---------------------------------
  style-sheet-for-schdule-html-page 
 ---------------------------------*/
-.blog{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0;
+.blogs{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .blog-buttons{
     row-gap: 20px;
