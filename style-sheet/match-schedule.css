@@ -1,39 +1,57 @@
 /*---------------------------------
  style-sheet-for-schdule-html-page 
 ---------------------------------*/
-.blogs{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.blogs {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
 }
-.blog-buttons{
-    row-gap: 20px;
+.blog-buttons {
+  row-gap: 20px;
 }
-.match{
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding:40px 20px;
+.blog-buttons .blog-btn:first-child{
+  background-color: rgb(255, 63, 63);
+  color: white;
 }
-.teams{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.blog-btn.active{
+  background-color: white;
+  color: rgb(82, 82, 82);
+
 }
-.teams img{
-    max-width:  40%;
-}.versus{
-    font-size: 18px;
-    font-weight: bold;
+.match {
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
 }
-.match-info h3{
-    text-align: center;
-    font-size: 24px;
-    margin: 15px;
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.match-info p{
-    text-align: center;
-    font-size: 18px;
-    color: #5C5C5C;
+.teams img {
+  max-width: 40%;
+}
+.versus {
+  font-size: 18px;
+  font-weight: bold;
+}
+.match-info h3 {
+  text-align: center;
+  font-size: 24px;
+  margin: 15px;
+}
+.match-info p {
+  text-align: center;
+  font-size: 18px;
+  color: #5c5c5c;
+}
+/*--------------------------
+ media-queries-for-tablet
+ ---------------------------*/
+@media screen and (max-width: 768px) {
+  .banner-decs .ellipsis-text {
+    display: none;
+  }
 }
